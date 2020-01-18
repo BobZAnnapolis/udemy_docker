@@ -1,0 +1,11 @@
+total 32
+drwxr-xr-x  10 bobzawislak  staff  320 Jan 18 15:34 .
+drwxr-xr-x  21 bobzawislak  staff  672 Jan 18 15:34 ..
+drwxr-xr-x   3 bobzawislak  staff   96 Jan 18 15:34 .circleci
+drwxr-xr-x  12 bobzawislak  staff  384 Jan 18 15:34 .git
+-rw-r--r--   1 bobzawislak  staff  156 Jan 18 15:34 Dockerfile
+-rw-r--r--   1 bobzawislak  staff  145 Jan 18 15:34 README.md
+drwxr-xr-x   5 bobzawislak  staff  160 Jan 18 15:34 app
+-rw-r--r--   1 bobzawislak  staff  144 Jan 18 15:34 docker-compose.yml
+-rw-r--r--   1 bobzawislak  staff    0 Jan 18 15:34 dummy.txt
+-rw-r--r--   1 bobzawislak  staff  165 Jan 18 15:34 prod.yml
