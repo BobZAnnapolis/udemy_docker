@@ -1,0 +1,19 @@
+# specify docker-compose version to use
+#  v2 and later - bypass the need to specify '--link redis' on the command line
+#               - will 'inherit' name from below 'services' definition in YML file
+version: '3'
+
+# define various services to run in a compose bundle
+#        order is important
+#        for each service - specify everything needed to start that service
+#                         - essentially the same as running separate DockerFile builds
+services:
+  dockerapp:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
+  redis:
+    image: redis
+

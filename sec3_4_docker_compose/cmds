@@ -1,0 +1,23 @@
+# python redis db app
+#
+# docker-compose
+#	do away with individual Dockerfile builds, container links, etc
+#	1 file, define all services
+#
+docker-compose version
+vi docker-compose.yml
+cat docker-compose.yml 
+docker-compose up -d  - to run in background
+docker ps
+docker-compose ps
+              Name                             Command               State           Ports         
+---------------------------------------------------------------------------------------------------
+sec3_4_docker_compose_dockerapp_1   python app.py                    Up      0.0.0.0:5000->5000/tcp
+sec3_4_docker_compose_redis_1       docker-entrypoint.sh redis ...   Up      6379/tcp              
+
+echo "docker-compose logs : spits out logs w/labelsfor each of the running containers "
+echo "docker-compose redis : spits out logs for just the named container"
+echo "docker-compose stop : 1 cmd to stop all running containers started by the YML file"
+echo "docker-compose rm : 1 cmd to delete all containers - have to verify"
+echo "docker-compose build : 1 cmd to rebuild any containers that have changes"
+

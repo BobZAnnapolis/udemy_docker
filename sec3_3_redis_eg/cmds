@@ -1,4 +1,5 @@
 # python redis db app
+#        using Docker Container Links
 #
 docker build -t dockerapp:v03 .
 docker images
