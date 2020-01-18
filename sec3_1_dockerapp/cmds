@@ -1,0 +1,11 @@
+# hello world container
+#
+cat Dockerfile 
+lsa
+docker build -t dockerapp:v01 .
+docker ps -a
+docker images
+docker run -d -p 5000:5000 cf76c558fb07
+docker ps
+docker exec -it f275c0f4d36c bash
+

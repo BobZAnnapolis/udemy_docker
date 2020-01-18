@@ -1,0 +1,6 @@
+# simple python cache key-value lookup app
+#
+docker build -t dockerapp:v02 .
+docker images
+docker run -d -p 5000:5000 aa7085ca06c8
+
